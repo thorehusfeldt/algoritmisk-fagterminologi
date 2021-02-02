@@ -1,6 +1,6 @@
 # Setup
-title: 'the missing semester of your cs education'
-url: https://missing.csail.mit.edu
+title: 'Algoritmisk fagterminologi'
+url: https://thorehusfeldt.github.io/algoritmisk-fagterminologi/
 
 # Settings
 markdown: kramdown
@@ -20,8 +20,9 @@ plugins:
 page_gen:
   - data: 'words'
     template: 'entry'
-    name_expr: record['title'].sub('æ', 'ae')
-    dir: 'words'
+    name: 'title'
+      #name_expr: record['title'].gsub('æ', 'ae')
+    dir: '/words/'
 
 collections:
   '2019':
