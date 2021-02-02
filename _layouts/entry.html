@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+<script type="text/javascript" async
+ src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+<h1 class="title">{{ page.title }} {% if page.subtitle %} <span class="subtitle">{{ page.subtitle }}</span>{% endif %}</h1>
+<small>
+<p>
+{{ page.grammar.class }}
+{{ page.grammar.gender }} </br>
+
+<span class="tag">Bøjning</span> {{ page.declinations }}</br>
+<span class="tag">Oprindelse</span> {{ page.etymology}}</br>
+<span class="tag">Engelsk</span> {{ page.english }}</br>
+</p>
+
+<h2>Betydning</h2>
+<p>{{ page.definition }}</p>
+
+
+{% if page.synonyms %}
+<p><span class="tag">Synonymer</span> 
+{% for word in page.synonyms %}
+{{ word}} 
+{% if forloop.last %}{% else %} | {% endif %}
+{% endfor %}
+</br>
+{% endif %}
+
+{% if page.near %}
+<p><span class="tag">Ord i nærheden</span> 
+{% for word in page.near %}
+{{ word}} 
+{% if forloop.last %}{% else %} | {% endif %}
+{% endfor %}
+</br>
+{% endif %}
+
+{% if page.example %}
+<blockquote>
+	{{ page.example }}
+</blockquote>
+{% endif %}
+
+{% if page.usage %}
+<span class="tag">Sprogbrug</span> {{ page.usage }}
+{% endif %}
+
+<h2>Faste udtryk</h2>
+
+{% for word in page.constructions %}
+<h3>{{ word.title }}</h3>
+
+<p class="indent"> 
+{{ word.definition }}
+{% if word.synonyms %}
+<span class="tag"></br>Synonymer</span> {{ word.synonyms }}
+{% endif %}
+</p>
+{% endfor %}
+<hr>
+
+<p>
+<small>
+{% assign lectures = site['2020'] | sort: 'entry' %}
+{% for word in lectures %}
+            <a href="{{ word.url }}">{{ word.title }}</a>
+{% endfor %}
+</small>
+</p>
+
+<div class="small center">
+<p><a href="https://github.com/missing-semester/missing-semester/blob/master/{{ page.path }}">Edit this page</a>.</p>
+<p>Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA</a>.</p>
+</div>
+

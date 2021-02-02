@@ -1,0 +1,428 @@
+- title: kø
+  grammar:
+    class: substantiv
+    gender: fælleskøn
+  declinations: "-en, -er"
+  etymology: > 
+    fra fransk *queue* »hale«.
+    Som andre franske låneord er stavemåden ændret fra »Queue« til »kø«, ganske som fra »Beuf« til »bøf«.
+  english: "*queue*, fra fransk queue"
+  definition: >
+    datastruktur, der understøtter indsættelse af elementer i den ene ende af en liste og fjernelse i den anden. 
+  synonyms:
+    - "fifu-kø"
+  near:
+    - prioritetskø
+    - stak
+    - dobbeltkø
+  usage: >
+    Man kan implementere en kø som dobbelthægtet liste.
+    For at implementere bredde først-søgning gemmer man fronten af knuder i en kø.
+  constructions:
+    - title: fifu-kø
+      definition: en almindelig kø, hvor det først tilføjede element også er det først fjernede
+- title: hægte
+  near: 
+    - hægtet liste
+  definition: >
+    sætte sammen, ofte om sammensætningen af knuder i en datastruktur ved hjælp af pegere
+- title: hægtet liste
+  definition:  en datastruktur, kan defineres rekursivt som værende enten den tomme liste eller en knude, der indeholder et element og en reference til en hægtet liste
+- title: peger
+  synonyms:
+    - reference
+    - henvisning
+  definition: en værdi der skal tolkes som en reference til en anden værdi, ofte i termer af værdiens lageradresse 
+- title: dybde først-søgning
+  grammar:
+    class: substantiv
+    gender: fælleskøn
+  declinations: "-en, -er, erne"
+  english: depth first search
+  definition: >
+    algoritme for gennemsøgning af en graf, hvor knuderne besøges efter først til møllen-princippet.
+
+- title: bredde først-søgning
+  grammar:
+    class: substantiv
+    gender: fælleskøn
+  declinations: "-en, -er, erne"
+  english: <i>breadth first search</i>
+  definition: >
+    algoritme for gennemsøgning af en graf, hvor knuderne besøges lagvist
+  synonyms:
+    - breddesøgning
+  near:
+    - dybde først-søgning
+  constructions:
+    - title: bredde først-nummerering
+      definition: >
+        afstandsnummerering af knuderne i en graf fra en kildeknude.
+        Kildeknuden har bredde først-nummer 0, dens naboer har nummer 1,
+        deres naboer har nummer 2, osv.
+
+- title: hakke
+  grammar:
+    class: verbum
+  declinations: -er, -de, -t
+  etymology: vist fra nedertysk <i>hacken</i> »hakke«
+  english: <i>hash</i>
+  definition: >
+    sprede over et udfaldsrum, ofte på en pseudotilfældig måde med henblik på at opnå en ligelig fordeling over udfaldsrummet
+  synonyms:
+    - sprede
+  usage: >
+    Det engelske ord <i>hash</i> (importeret via fransk <i>hacher</i>, »at hakke«) bruges ligeledes i betydningen »at hakke i småstykker«, »at sønderdele«.
+    Den engelsksprogede madret <i>hash</i> (som i <i>corned beef hash</i>) hedder på dansk <i>hakkekød</i> eller <i>hachis</i>.
+    Det danske ord <i>hash</i> (fra arabisk <i>hashish</i> حشيش, »hamp«) er derimod et rusmiddel og både kulinarisk, etymologisk
+    og funktionelt helt urelateret til hakning.
+  example: >
+    Funktionen hakker værdierne til et heltal i området \(\{0,\ldots, B-1\}\), som så bruges som tabelindeks.
+  constructions:
+    - title: hakkefunktion
+      synonyms: 
+        - spredefunktion
+      definition: en funktion, der hakker
+    - title: hakkeværdi
+      synonyms: 
+        - spredeværdi
+      definition: den hakkede værdi. Resultatet af en hakkefunktion.
+    - title: hakketabel
+      synonyms:
+        - spredetabel
+      definition: en tabel af værdier, især om en associativ række, hvor værdiernes indeks er deres hakkeværdi
+    - title: kryptografisk hakkefunktion
+      definition: en hakkefunktion, der er vanskelig at invertere 
+    - title: afstandsfølsom hakkefunktion
+      definition: >
+        en hakkefunktion fra et metrisk rum, hvor elementer med mindre afstand har højere kollisionssandsynlighed
+
+- title: hob
+  grammar:
+    class: substantiv
+    gender: fælleskøn
+  declinations: "-en, -e, -ene"
+  etymology: > 
+    norrønt <i>stakkr</i> »stak«, »stabel«
+  english: <i>heap</i>
+  definition: >
+    datastruktur
+  synonyms:
+    - bunke
+    - dynge
+  usage: >
+    Mads sætter et element i hoben. Lise fjerner et element fra hoben. Det mindste element ligger øverst på hoben.
+  constructions:
+    - title: binærhob
+      definition: en særlig slags hob
+    - title: rækkebaseret hob
+      definition: implementation af en binærhob baseret på rækker
+    - title: hobsortering
+      definition: en sorteringsalgoritme
+
+- title: kant
+  grammar:
+    class: substantiv
+    gender: fælleskøn
+  declinations: -en, -er, -rne
+  english: <i>edge</i>
+  definition: >
+    relationen mellem knuderne i en graf.
+  near:
+    - knude
+  usage: >
+    For urettede grafer er »hjørne« ofte foretrukket, hvilket harmonerer med »kant«.
+    Termen »knude« forekommer oftest når grafen er et netværk.
+  example: >
+    Hver kant illustreres som et linjestykke (eller kurvestykke) med knuder som sine to endepunkter.
+  constructions:
+    - title: rettet kant
+      definition: en ikke nødvendigvis symmetrisk binær relation mellem knuder
+    - title: urettet kant
+      definition: en symmetrisk binær relation mellem knuder
+    - title: dobbeltkant
+      definition: en kant mellem samme knudepar som en anden kant
+    - title: vægtet kant
+      definition: en kant med tilknyttet værdi, fx en omkostning eller kapacitet
+
+- title: knude
+  grammar:
+    class: substantiv
+    gender: fælleskøn
+  declinations: -n, -r, -rne
+  etymology: norrønt <i>knútr</i>
+  english: <i>vertex</i>, <i>node</i>
+  definition: >
+    element i en graf. En graf består af knuder og kanter mellem knuderne.
+  synonyms:
+    - hjørne
+    - punkt
+  near:
+    - rodknude
+    - startknude
+    - målknude
+  usage: >
+    For urettede grafer er »hjørne« ofte foretrukket, hvilket harmonerer med »kant«.
+    Termen »knude« forekommer oftest når grafen er et netværk.
+  example: >
+    Hver knude i grafen repræsenterer en person.
+  constructions:
+    - title: knudemængde
+      definition: mængden af knuder i en graf
+    - title: knudeinduceret delgraf
+      definition: >
+        en delgraf \(H\) af grafen \(H\) er knudeinduceret af knudedelmængden \(U\subseteq V(G)\),
+        hvis \(V(H)= U\) og \(uv\in E(H)\) hvis og kun hvis \(u,v\in V(H)\) og \(uv\in E(G)\).
+    - title: rodknude
+      synonyms: 
+        - rod
+      definition: en specifik knude i et rodfæstet træ 
+
+- title: kviksortering
+  definition: En sorteringsalgoritme
+  grammar:
+    class: substantiv
+    gender: fælleskøn
+  declinations: -en, -er
+  usage: >
+    Et udbredte alternativ er at bruge engelsk stavning og en tillempet engelsk udtale af quicksort, jf. kviksølv, kviksand, men quickstep. Algoritmen blev navngivet af C. A. R. Hoare og kunne sagtens hedde hoaresortering i stedet. 
+
+- title: markovkæde
+  definition: stokastisk model for en følge af afhængige hændelser.
+
+- title: opslag
+  synonyms:
+    - forespørgsel
+  definition:
+    det at slå op i nogen, fx en datastruktur
+  usage: >
+    tiden for indsættelse og opslag er logaritmisk i antallet af elementer.
+
+- title: lineær probering
+  grammar:
+    class: substantiv
+    gender: fælleskøn
+  declinations: -n
+  english: <i>linear probing</i>
+  definition: >
+    en datastruktur, der består af en hakketabel med brug af åben adressering, dvs. at værdier ikke nødvendigvis står på den tabelindgang, der er givet af deres hakkeværdi
+  near:
+    - separat kobling
+    - hakke
+- title: præfikstræ
+  grammar:
+    class: substantiv
+    gender: intetkøn
+  declinations: -et, -er, -erne
+  english: <i>prefix tree</i>, <i>digital tree</i>, <i>trie</i>
+  definition: >
+    en datastruktur, især brugt til at repræsentere mænge af strenge, kendetegnet ved at elementerne i mængden er implicit repræsenterede som stier fra roden til en knude
+  synonyms:
+    - alfabettræ
+    - trie (-en, -erne, udtales [ˈbiːə], dvs som <i>die</i>, ikke <i>pie</i>)
+  near:
+    - træ
+- title: rette
+  grammar:
+    class: verbum
+  declinations: -r, -de, -t
+  etymology: fra »ret«,  norrønt <i>réttr,</i> oldengelsk riht beslægtet med latin <i>rectus</i> »ret, rigtig, tilbørlig«
+  english: <i>direct</i>
+  definition: >
+    lade noget pege i en bestemt retning. Især brugt i tillægsmåde, »rettet«.
+  near:
+    - orienteret graf
+  usage: >
+    En rettet graf består af rettede kanter.
+    Et udtræ er et rodfæstet træ hvori samlige kanter er rettede væk fra roden.
+  example: >
+    Restgrafen indeholder to modsatrettede kanter for hver kant i strømningsgrafen.
+
+  constructions:
+    - title: rettet kant
+      definition: en orienteret kant
+    - title: rettet graf
+      definition: >
+        en graf, hvor hver kant har retning. En rettet graf kaldes »orienteret«,
+        hvis den ikke indeholder et par af knuder, som er forbundet af to kanter i hver sin retning.
+    - title: urettet graf
+      definition: >
+        en graf, hvis kanter ikke har retning. 
+    - title: rettet acyklisk graf
+      definition: en rettet graf, uden (rettet) kreds.
+        En rettet acyklisk graf (ofte forkortet »rag«) tillader en topologisk sortering af knuderne.
+- title: række
+  definition: grundlæggende datastruktur, som tillader vilkårlig adgang til nummererede elementer, ofte af samme type.
+- title: foranderlig
+  definition: >
+    om datastrukturer for samlingstyper; en datastruktur er foranderlig, hvis den tillader ændring af elementerne i samlingen.
+  usage: > 
+    i python er strengtypen uforanderlig, mens en liste af tegn er foranderlig.
+- title: rutenøgle
+  synonyms:
+    - spaltenøgle
+    - opdelingsnøgle
+  definition:
+    en værdi, der bruges til navigation i en datastruktur eller opdeling i en algoritme, fx en intern knude i et søgetræ eller ruteelementet i kviksortering
+  usage:
+    i et bladorienteret søgetræ bruges de interne knuder kun som rutenøgler.
+- title: separat kobling
+  grammar:
+    class: substantiv
+    gender: fælleskøn
+  declinations: -n, -r
+  english: <i>separate chaining</i>
+  definition: >
+    en datastruktur, der består af en hakketabel, hvis indgange indeholder sammekoblede værdier,
+    fx i en usorteret følge fremstillet som hægtet liste eller dynamisk række
+  synonyms:
+    - separat spredning
+    - hægtet hakning/spredning
+  near:
+    - lineær probering
+    - hakke
+  example: >
+    I de fleste anvendelser gælder \(n < N/m\), og i så fald kan separat kobling degenerere til lineær søgning. 
+
+- title: spændetræ
+  grammar:
+    class: substantiv
+    gender: intetkøn
+  declinations: "-en, -er, -erne"
+  etymology: > 
+    norrønt <i>spenna</i>, middelhøjtysk <i>spennen</i> af en rod med betydningen »spænde, trække«
+  english: <i>stack</i>
+  definition: >
+    en kredsfri og sammenhængende delgraf af en graf, der indeholder alle grafens knuder
+  synonyms:
+    - "udspændende træ"
+  near:
+    - træ
+  usage: >
+    Cayleys formel siger, at en fuldstændig graf med \(n\) knuder har \(n^{n-2}\) spændetræer.
+  constructions:
+    - title: minimalt stændetræ
+      definition: i en vægtet graf, et spændetræ af minimal total vægt
+    - title: spændeskov
+      definition: en kredsfri delgraf af en graf, der indeholder alle grafens knuder. En sammenhængdende spændeskov er et spændetræ
+    - title: udspændende delgraf
+      definition: en delgraf af en graf, der indeholder alle grafens knuder. En kredsfri udspændende delgraf er en spændeskov.
+
+- title: stak
+  grammar:
+    class: substantiv
+    gender: fælleskøn
+  declinations: "-ken, -ke, kene"
+  etymology: > 
+    norrønt <i>stakkr</i> »stak«, »stabel«
+  english: <i>stack</i>
+  definition: >
+    datastruktur, der understøtter indsættelse og fjernelse af elementer i samme ende af listen
+  synonyms:
+    - "fisu-kø"
+  near:
+    - stakke
+    - afstakke
+  usage: >
+    Man kan implementere en stak som en dynamisk række.
+    For at implementere dybde først-søgning gemmer man fronten af knuder i en stak; afviklingssystemets kaldstak gør dette for dig.
+  constructions:
+    - title: stakbaseret sprog
+      definition: en type programmeringssprog, hvor udtryksevalueringen er stakbaseret
+    - title: kaldstak
+      definition: operativsystemets stak af aktive delrutiner
+- title: del og hersk
+  definition: et paradigme for algoritmisk problemløsning
+- title: grådig
+  definition: et paradigme for algoritmisk problemløsning
+  constructions:
+    - title: grådig algoritme
+      definition: en algoritme, der følger en grådig strategi.
+
+- title: dynamisk programlægning
+  definition: et paradigme for algoritmisk problemløsning
+- title: komplet
+  synonyms: 
+    - fuldstændig
+  definition: sammenføje to ordnede følger til én
+
+- title: flette
+  definition: sammenføje to ordnede følger til én
+- title: flettesortering
+  definition: en sorteringsalgoritme baseset på fletning.
+
+- title: indsættelsessortering
+  definition: en sorteringsalgoritme.
+- title: udvalgssortering
+  definition: en sorteringsalgoritme.
+- title: shellsortering
+  definition: en sorteringsalgoritme opkaldt efter Donald Shell.
+- title: ordbog
+  synonyms:
+    - symboltabel
+  definition: en datastruktur
+- title: forén og find
+  english: union–find
+  definition: >
+    en datatype til repræsentation af en familje af disjunkte mængder, med entydige repræsentanter.
+    Operationerne tillader forening af to mængder og fund af repræsentanten for den mængde, som indeholder et givet element.
+    Ofte om en konkret implementation af datatypen som en skov af indtræer.
+  constructions:
+    - title: vægtet forening
+      definition: en opdateringsstrategi baseret på mængdestørrelse
+    - title: rangeret forening
+      definition: en opdateringsstrategi
+    - title: vejforkortning
+      definition: en opdateringsstrategi
+- title: ækvivalensrelation
+  definition: en binær relation, som der symmetrisk, transitiv og refleksiv.
+
+- title: afslutning
+  synonyms:
+    - lukning
+  definition: om strukturer; den mindste omsluttende struktur, der er lukket under en vis operation.
+  english: closure
+  constructions:
+    - title: transitiv afslutning
+      definition: især om grafer; den graf, som indeholder kanten \(uv\) for hvert par af knuder \((u,v)\), for hvilket der er en vej fra \(u\) til \(v\) i den givne graf.
+  usage: >
+    Vi beregner grafens transitive afslutning på følgende måde.
+    Betragt et endeligt dimensionalt kompakt Hausdorffrum, der er afsluttet i primidealrummet mht. hylster-kerne topologien.
+- title: kørselstid
+  definition: den tid, det tager at udføre en algoritme, ofte i en underforstået abstrakt maskinemodel, i værste fald og som funktion af problemstørrelsen
+  english: running time*, execution time, computation time
+  synonyms:
+    - udførelsestid
+    - regnetid 
+
+- title: linearitmisk
+  definition: om funktioner; med samme vækstrate som \(n\log n\).
+- title: søgetræ
+  definition: en datastruktur
+  constructions:
+    - title: binært søgetræ
+      definition: et søgetræ hvor hver knude har højst to børn
+    - title: 2-3-søgetræ
+      definition: et balanceret søgetræ hvor hver knude har to eller tre børn
+    - title: rødt-sort søgetræ
+      definition: et søgetræ, der følger en rød-sort balanceringsstrategi
+    - title: top-ned 2-3-4-træ
+      definition: et søgetræ
+    - title: bund-op 2-3-4-træ
+      definition: et søgetræ
+
+- title: topologisk sortering
+  definition: nummering af knuderne i en rettet acyklisk graf således at hver kant er rettet fra et mindre nummer til et større.
+
+- title: vej
+  synonyms:
+    - sti
+  definition: i en graf; en følge af hosliggende knuder og kanter. Ofte om en sådan følge uden gentagelser; da udtrykkeligt som »simpel vej«.
+  usage: >
+    Dijkstras algoritme finder korteste veje.
+    Det er NP-hårdt at finde en hamiltonvej i en graf.
+
+- title: kantfølge
+  definition: >
+    i en graf; en følge af hosliggende knuder og kanter. 
+    Ofte når gentagelse af knuder eller kanter udtrykkeligt er tilladt.
