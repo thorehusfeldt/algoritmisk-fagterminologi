@@ -426,3 +426,6 @@
   definition: >
     i en graf; en følge af hosliggende knuder og kanter. 
     Ofte når gentagelse af knuder eller kanter udtrykkeligt er tilladt.
+
+- title: refleksiv
+  defintion: en relation er refleksiv, hvis hvert element er relateret til sig selv.
