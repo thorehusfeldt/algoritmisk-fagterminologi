@@ -3,7 +3,6 @@ layout: page
 title: Algoritmisk fagterminologi
 ---
 
-
 <dl>
 {% assign sortedwords = site.data.words | sort: 'title' %}
 {%- for word in sortedwords %}

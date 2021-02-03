@@ -1,13 +1,11 @@
 ---
-layout: default
+layout: page
 ---
 
 <script type="text/javascript" async
  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
+</script>
 
-<h1 class="title">{{ page.title }} {% if page.subtitle %} <span class="subtitle">{{ page.subtitle }}</span>{% endif %}</h1>
-<small>
 <p>
 {{ page.grammar.class }}
 {{ page.grammar.gender }} </br>
@@ -63,14 +61,6 @@ layout: default
 {% endfor %}
 <hr>
 
-<p>
-<small>
-{% assign lectures = site['2020'] | sort: 'entry' %}
-{% for word in lectures %}
-            <a href="{{ word.url }}">{{ word.title }}</a>
-{% endfor %}
-</small>
-</p>
 
 <div class="small center">
 <p><a href="https://github.com/missing-semester/missing-semester/blob/master/{{ page.path }}">Edit this page</a>.</p>

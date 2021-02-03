@@ -15,20 +15,16 @@ timezone: America/New_York
 analytics:
   tracking_id: UA-53167467-11
 
-plugins:
-  - jekyll-datapage-generator
-page_gen:
-  - data: 'words'
-    template: 'entry'
-    name: 'title'
-      #name_expr: record['title'].gsub('æ', 'ae')
-    dir: '/words/'
-
 collections:
-  '2019':
+  words:
     output: true
-  '2020':
-    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "words"
+    values:
+      layout: word
 
 # Excludes
 exclude:
