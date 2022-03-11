@@ -12,10 +12,10 @@ grammar:
   class: substantiv
   gender: fælleskøn
 near:
-- lineær probering
+- lineær sondering
 - hakke
 synonyms:
-- separat spredning
+- separat hægtning
 - hægtet hakning/spredning
 title: separat kobling
 ---

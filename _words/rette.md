@@ -10,9 +10,9 @@ constructions:
   title: rettet graf
 - definition: "en graf, hvis kanter ikke har retning. \n"
   title: urettet graf
-- definition: en rettet graf, uden (rettet) kreds. En rettet acyklisk graf (ofte forkortet
-    »rag«) tillader en topologisk sortering af knuderne.
-  title: rettet acyklisk graf
+- definition: en rettet graf uden (rettet) kreds. En kredsfri rettet graf tillader
+    en topologisk sortering af knuderne.
+  title: kredsfri rettet graf
 declinations: -r, -de, -t
 definition: 'lade noget pege i en bestemt retning. Især brugt i tillægsmåde, »rettet«.
 

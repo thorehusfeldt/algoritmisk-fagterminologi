@@ -1,5 +1,5 @@
 ---
-definition: sammenføje to ordnede følger til én
+definition: repræsentativ for en problemklasses sværeste problemer
 synonyms:
 - fuldstændig
 title: komplet

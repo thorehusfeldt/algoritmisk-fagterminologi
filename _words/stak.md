@@ -22,8 +22,8 @@ near:
 synonyms:
 - fisu-kø
 title: stak
-usage: 'Man kan implementere en stak som en dynamisk række. For at implementere dybde
-  først-søgning gemmer man fronten af knuder i en stak; afviklingssystemets kaldstak
+usage: 'Man kan implementere en stak som en ubegrænset række. For at implementere
+  dybdesøgning gemmer man fronten af knuder i en stak; afviklingssystemets kaldstak
   gør dette for dig.
 
   '

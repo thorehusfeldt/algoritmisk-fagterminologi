@@ -420,24 +420,26 @@
       definition: et søgetræ
 
 - title: topologisk sortering
-  definition: nummering af knuderne i en rettet acyklisk graf således at hver kant er rettet fra et mindre nummer til et større.
+  definition: nummering af knuderne i en kredsfri rettet graf således at hver kant er rettet fra et mindre nummer til et større.
 
 - title: vej
+  definition: > 
+    i en graf; en følge af hosliggende knuder og kanter. Ofte om en sådan følge uden gentagelser; da udtrykkeligt som »simpel vej«.
   synonyms:
     - sti
-  definition: i en graf; en følge af hosliggende knuder og kanter. Ofte om en sådan følge uden gentagelser; da udtrykkeligt som »simpel vej«.
   usage: >
     Dijkstras algoritme finder korteste veje.
-    Det er NP-hårdt at finde en hamiltonvej i en graf.
+    Det er NP-svært at finde en hamiltonvej i en graf.
 
 - title: kantfølge
   definition: >
     i en graf; en følge af hosliggende knuder og kanter. 
     Ofte når gentagelse af knuder eller kanter udtrykkeligt er tilladt.
 
+
 - title: refleksiv
-  defintion: en relation er refleksiv, hvis hvert element er relateret til sig selv.
+  definition: en relation er refleksiv, hvis hvert element er relateret til sig selv.
 
 - title: ubegrænset række
-  synonyms: dynamisk række
-
+  definition: en dynamisk datastruktur
+  synonyms: [dynamisk række, fordoblende række]

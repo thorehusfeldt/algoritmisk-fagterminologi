@@ -21,8 +21,8 @@ near:
 synonyms:
 - fifu-kø
 title: kø
-usage: 'Man kan implementere en kø som dobbelthægtet liste. For at implementere bredde
-  først-søgning gemmer man fronten af knuder i en kø.
+usage: 'Man kan implementere en kø som dobbelthægtet liste. For at implementere breddesøgning
+  gemmer man fronten af knuder i en kø.
 
   '
 ---
