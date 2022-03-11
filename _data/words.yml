@@ -335,8 +335,10 @@
       definition: en type programmeringssprog, hvor udtryksevalueringen er stakbaseret
     - title: kaldstak
       definition: operativsystemets stak af aktive delrutiner
+
 - title: del og hersk
   definition: et paradigme for algoritmisk problemløsning
+
 - title: grådig
   definition: et paradigme for algoritmisk problemløsning
   constructions:
@@ -345,10 +347,12 @@
 
 - title: dynamisk programlægning
   definition: et paradigme for algoritmisk problemløsning
+
 - title: komplet
   synonyms: 
     - fuldstændig
-  definition: sammenføje to ordnede følger til én
+  definition: repræsentativ for en problemklasses sværeste problemer
+
 
 - title: flette
   definition: sammenføje to ordnede følger til én
