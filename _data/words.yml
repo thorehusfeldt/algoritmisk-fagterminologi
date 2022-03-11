@@ -17,7 +17,7 @@
     - dobbeltkø
   usage: >
     Man kan implementere en kø som dobbelthægtet liste.
-    For at implementere bredde først-søgning gemmer man fronten af knuder i en kø.
+    For at implementere breddesøgning gemmer man fronten af knuder i en kø.
   constructions:
     - title: fifu-kø
       definition: en almindelig kø, hvor det først tilføjede element også er det først fjernede
@@ -33,7 +33,7 @@
     - reference
     - henvisning
   definition: en værdi der skal tolkes som en reference til en anden værdi, ofte i termer af værdiens lageradresse 
-- title: dybde først-søgning
+- title: dybdesøgning
   grammar:
     class: substantiv
     gender: fælleskøn
@@ -41,8 +41,12 @@
   english: depth first search
   definition: >
     algoritme for gennemsøgning af en graf, hvor knuderne besøges efter først til møllen-princippet.
+  synonyms:
+    - dybde først-søgning (dfs)
+  near:
+    - breddesøgning
 
-- title: bredde først-søgning
+- title: breddesøgning
   grammar:
     class: substantiv
     gender: fælleskøn
@@ -51,14 +55,14 @@
   definition: >
     algoritme for gennemsøgning af en graf, hvor knuderne besøges lagvist
   synonyms:
-    - breddesøgning
+    - bredde først-søgning (bfs)
   near:
-    - dybde først-søgning
+    - dybdesøgning
   constructions:
-    - title: bredde først-nummerering
+    - title: breddenummerering
       definition: >
         afstandsnummerering af knuderne i en graf fra en kildeknude.
-        Kildeknuden har bredde først-nummer 0, dens naboer har nummer 1,
+        Kildeknuden har breddenummer 0, dens naboer har nummer 1,
         deres naboer har nummer 2, osv.
 
 - title: hakke
@@ -198,7 +202,7 @@
   usage: >
     tiden for indsættelse og opslag er logaritmisk i antallet af elementer.
 
-- title: lineær probering
+- title: lineær sondering
   grammar:
     class: substantiv
     gender: fælleskøn
@@ -248,9 +252,9 @@
     - title: urettet graf
       definition: >
         en graf, hvis kanter ikke har retning. 
-    - title: rettet acyklisk graf
-      definition: en rettet graf, uden (rettet) kreds.
-        En rettet acyklisk graf (ofte forkortet »rag«) tillader en topologisk sortering af knuderne.
+    - title: kredsfri rettet graf
+      definition: en rettet graf uden (rettet) kreds.
+        En kredsfri rettet graf tillader en topologisk sortering af knuderne.
 - title: række
   definition: grundlæggende datastruktur, som tillader vilkårlig adgang til nummererede elementer, ofte af samme type.
 - title: foranderlig
@@ -276,10 +280,10 @@
     en datastruktur, der består af en hakketabel, hvis indgange indeholder sammekoblede værdier,
     fx i en usorteret følge fremstillet som hægtet liste eller dynamisk række
   synonyms:
-    - separat spredning
+    - separat hægtning
     - hægtet hakning/spredning
   near:
-    - lineær probering
+    - lineær sondering
     - hakke
   example: >
     I de fleste anvendelser gælder \(n < N/m\), og i så fald kan separat kobling degenerere til lineær søgning. 
@@ -324,8 +328,8 @@
     - stakke
     - afstakke
   usage: >
-    Man kan implementere en stak som en dynamisk række.
-    For at implementere dybde først-søgning gemmer man fronten af knuder i en stak; afviklingssystemets kaldstak gør dette for dig.
+    Man kan implementere en stak som en ubegrænset række.
+    For at implementere dybdesøgning gemmer man fronten af knuder i en stak; afviklingssystemets kaldstak gør dette for dig.
   constructions:
     - title: stakbaseret sprog
       definition: en type programmeringssprog, hvor udtryksevalueringen er stakbaseret
@@ -429,3 +433,7 @@
 
 - title: refleksiv
   defintion: en relation er refleksiv, hvis hvert element er relateret til sig selv.
+
+- title: ubegrænset række
+  synonyms: dynamisk række
+
