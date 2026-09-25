@@ -1,4 +1,4 @@
 ---
-definition: en sorteringsalgoritme baseset på fletning.
+definition: en sorteringsalgoritme baseret på fletning.
 title: flettesortering
 ---

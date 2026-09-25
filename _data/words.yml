@@ -37,10 +37,10 @@
   grammar:
     class: substantiv
     gender: fælleskøn
-  declinations: "-en, -er, erne"
+  declinations: "-en, -er, -erne"
   english: depth first search
   definition: >
-    algoritme for gennemsøgning af en graf, hvor knuderne besøges efter først til møllen-princippet.
+    algoritme for gennemsøgning af en graf, hvor søgningen fortsætter fra den senest opdagede knude, der stadig har ubesøgte naboer.
   synonyms:
     - dybde først-søgning (dfs)
   near:
@@ -50,7 +50,7 @@
   grammar:
     class: substantiv
     gender: fælleskøn
-  declinations: "-en, -er, erne"
+  declinations: "-en, -er, -erne"
   english: <i>breadth first search</i>
   definition: >
     algoritme for gennemsøgning af en graf, hvor knuderne besøges lagvist
@@ -175,7 +175,7 @@
       definition: mængden af knuder i en graf
     - title: knudeinduceret delgraf
       definition: >
-        en delgraf \(H\) af grafen \(H\) er knudeinduceret af knudedelmængden \(U\subseteq V(G)\),
+        en delgraf \(H\) af grafen \(G\) er knudeinduceret af knudedelmængden \(U\subseteq V(G)\),
         hvis \(V(H)= U\) og \(uv\in E(H)\) hvis og kun hvis \(u,v\in V(H)\) og \(uv\in E(G)\).
     - title: rodknude
       synonyms: 
@@ -220,7 +220,7 @@
   declinations: -et, -er, -erne
   english: <i>prefix tree</i>, <i>digital tree</i>, <i>trie</i>
   definition: >
-    en datastruktur, især brugt til at repræsentere mænge af strenge, kendetegnet ved at elementerne i mængden er implicit repræsenterede som stier fra roden til en knude
+    en datastruktur, især brugt til at repræsentere mængder af strenge, kendetegnet ved at elementerne i mængden er implicit repræsenterede som stier fra roden til en knude
   synonyms:
     - alfabettræ
     - trie (-en, -erne, udtales [ˈbiːə], dvs som <i>die</i>, ikke <i>pie</i>)
@@ -238,13 +238,13 @@
     - orienteret graf
   usage: >
     En rettet graf består af rettede kanter.
-    Et udtræ er et rodfæstet træ hvori samlige kanter er rettede væk fra roden.
+    Et udtræ er et rodfæstet træ hvori samtlige kanter er rettede væk fra roden.
   example: >
-    Restgrafen indeholder to modsatrettede kanter for hver kant i strømningsgrafen.
+    Restgrafen kan indeholde to modsatrettede kanter for hver kant i strømningsnetværket.
 
   constructions:
     - title: rettet kant
-      definition: en orienteret kant
+      definition: en kant med retning, dvs. et ordnet par af knuder
     - title: rettet graf
       definition: >
         en graf, hvor hver kant har retning. En rettet graf kaldes »orienteret«,
@@ -277,7 +277,7 @@
   declinations: -n, -r
   english: <i>separate chaining</i>
   definition: >
-    en datastruktur, der består af en hakketabel, hvis indgange indeholder sammekoblede værdier,
+    en datastruktur, der består af en hakketabel, hvis indgange indeholder sammenkoblede værdier,
     fx i en usorteret følge fremstillet som hægtet liste eller dynamisk række
   synonyms:
     - separat hægtning
@@ -292,10 +292,10 @@
   grammar:
     class: substantiv
     gender: intetkøn
-  declinations: "-en, -er, -erne"
+  declinations: "-et, -er, -erne"
   etymology: > 
     norrønt <i>spenna</i>, middelhøjtysk <i>spennen</i> af en rod med betydningen »spænde, trække«
-  english: <i>stack</i>
+  english: <i>spanning tree</i>
   definition: >
     en kredsfri og sammenhængende delgraf af en graf, der indeholder alle grafens knuder
   synonyms:
@@ -305,10 +305,10 @@
   usage: >
     Cayleys formel siger, at en fuldstændig graf med \(n\) knuder har \(n^{n-2}\) spændetræer.
   constructions:
-    - title: minimalt stændetræ
+    - title: minimalt spændetræ
       definition: i en vægtet graf, et spændetræ af minimal total vægt
     - title: spændeskov
-      definition: en kredsfri delgraf af en graf, der indeholder alle grafens knuder. En sammenhængdende spændeskov er et spændetræ
+      definition: en kredsfri delgraf af en graf, der indeholder alle grafens knuder. En sammenhængende spændeskov er et spændetræ
     - title: udspændende delgraf
       definition: en delgraf af en graf, der indeholder alle grafens knuder. En kredsfri udspændende delgraf er en spændeskov.
 
@@ -357,7 +357,7 @@
 - title: flette
   definition: sammenføje to ordnede følger til én
 - title: flettesortering
-  definition: en sorteringsalgoritme baseset på fletning.
+  definition: en sorteringsalgoritme baseret på fletning.
 
 - title: indsættelsessortering
   definition: en sorteringsalgoritme.
@@ -372,7 +372,7 @@
 - title: forén og find
   english: union–find
   definition: >
-    en datatype til repræsentation af en familje af disjunkte mængder, med entydige repræsentanter.
+    en datatype til repræsentation af en familie af disjunkte mængder, med entydige repræsentanter.
     Operationerne tillader forening af to mængder og fund af repræsentanten for den mængde, som indeholder et givet element.
     Ofte om en konkret implementation af datatypen som en skov af indtræer.
   constructions:
@@ -383,7 +383,7 @@
     - title: vejforkortning
       definition: en opdateringsstrategi
 - title: ækvivalensrelation
-  definition: en binær relation, som der symmetrisk, transitiv og refleksiv.
+  definition: en binær relation, som er symmetrisk, transitiv og refleksiv.
 
 - title: afslutning
   synonyms:
@@ -398,7 +398,7 @@
     Betragt et endeligt dimensionalt kompakt Hausdorffrum, der er afsluttet i primidealrummet mht. hylster-kerne topologien.
 - title: kørselstid
   definition: den tid, det tager at udføre en algoritme, ofte i en underforstået abstrakt maskinemodel, i værste fald og som funktion af problemstørrelsen
-  english: running time*, execution time, computation time
+  english: running time, execution time, computation time
   synonyms:
     - udførelsestid
     - regnetid 
@@ -420,7 +420,7 @@
       definition: et søgetræ
 
 - title: topologisk sortering
-  definition: nummering af knuderne i en kredsfri rettet graf således at hver kant er rettet fra et mindre nummer til et større.
+  definition: nummerering af knuderne i en kredsfri rettet graf således at hver kant er rettet fra et mindre nummer til et større.
 
 - title: vej
   definition: > 
@@ -443,3 +443,136 @@
 - title: ubegrænset række
   definition: en dynamisk datastruktur
   synonyms: [dynamisk række, fordoblende række]
+
+- title: strømningsnetværk
+  grammar:
+    class: substantiv
+    gender: intetkøn
+  declinations: "-et, -, -ene"
+  english: <i>flow network</i>
+  definition: >
+    en rettet graf med to særlige knuder, en kilde \(s\) og et dræn \(t\),
+    hvor hver kant \(e\) har en kapacitet \(c(e)\).
+  near:
+    - strømning
+    - restgraf
+  usage: >
+    Om strømningsnetværk siger man »netværk«, ikke »graf«, og »knude«, ikke »hjørne«.
+    Den tilhørende restgraf er derimod en graf.
+  example: >
+    Kilden i et strømningsnetværk har ingen indgående kanter, og drænet har ingen udgående.
+  constructions:
+    - title: kapacitet
+      definition: den største strømning, en kant kan bære
+
+- title: kilde
+  grammar:
+    class: substantiv
+    gender: fælleskøn
+  declinations: "-n, -r, -rne"
+  english: <i>source</i>
+  definition: >
+    i et strømningsnetværk; den knude, hvorfra strømningen udgår, ofte betegnet \(s\).
+  near:
+    - dræn
+    - strømningsnetværk
+  usage: >
+    I versionsstyring betegner »kilde« derimod det forvalgte opstrømsrepos (engelsk <i>origin</i>).
+  constructions:
+    - title: kildeknude
+      definition: kilden, når det skal understreges, at der er tale om en knude
+
+- title: dræn
+  grammar:
+    class: substantiv
+    gender: intetkøn
+  declinations: "-et, -, -ene"
+  english: <i>sink</i>
+  definition: >
+    i et strømningsnetværk; den knude, hvor strømningen ender, ofte betegnet \(t\).
+  near:
+    - kilde
+    - strømningsnetværk
+
+- title: strømning
+  grammar:
+    class: substantiv
+    gender: fælleskøn
+  declinations: "-en, -er, -erne"
+  english: <i>flow</i>
+  definition: >
+    i et strømningsnetværk; en tildeling af en værdi \(f(e)\) til hver kant \(e\),
+    der overholder kapacitetsbetingelserne og bevarelsesbetingelserne.
+  near:
+    - strømningsnetværk
+    - forbedrende vej
+  usage: >
+    Strømningens værdi er summen af strømningen på kanterne ud af kilden.
+  constructions:
+    - title: kapacitetsbetingelse
+      definition: >
+        betingelsen \(0\leq f(e)\leq c(e)\) for hver kant \(e\).
+    - title: bevarelsesbetingelse
+      definition: >
+        betingelsen, at strømningen ind i en knude er lig med strømningen ud af den,
+        for hver knude bortset fra kilden og drænet.
+    - title: maksimal strømning
+      definition: en strømning af størst mulig værdi
+
+- title: restgraf
+  grammar:
+    class: substantiv
+    gender: fælleskøn
+  declinations: "-en, -er, -erne"
+  english: <i>residual graph</i>
+  definition: >
+    for en strømning \(f\) i et strømningsnetværk \(G\); grafen \(G_f\) med samme knuder som \(G\),
+    som har en forlænskant \(uv\) for hver kant \(uv\) med \(f(uv) < c(uv)\)
+    og en baglænskant \(vu\) for hver kant \(uv\) med \(f(uv) > 0\).
+  near:
+    - strømningsnetværk
+    - forbedrende vej
+  example: >
+    Restgrafen kan indeholde to modsatrettede kanter for hver kant i strømningsnetværket.
+  constructions:
+    - title: restkapacitet
+      definition: >
+        kapaciteten af en kant i restgrafen: \(c_f(uv) = c(uv) - f(uv)\) for en forlænskant
+        og \(c_f(vu) = f(uv)\) for en baglænskant.
+    - title: forlænskant
+      definition: >
+        en kant i restgrafen med samme retning som den tilsvarende kant i strømningsnetværket.
+    - title: baglænskant
+      definition: >
+        en kant i restgrafen med modsat retning af den tilsvarende kant i strømningsnetværket.
+        At sende strømning langs en baglænskant mindsker strømningen på den oprindelige kant.
+
+- title: forbedrende vej
+  grammar:
+    class: substantiv
+    gender: fælleskøn
+  declinations: "-en, -e, -ene"
+  english: <i>augmenting path</i>
+  definition: >
+    en vej fra kilden til drænet i restgrafen.
+  near:
+    - flaskehals
+    - restgraf
+  usage: >
+    Ford og Fulkersons metode forbedrer strømningen langs en forbedrende vej,
+    indtil der ikke findes flere.
+  example: >
+    Strømningen er maksimal, netop når restgrafen ikke indeholder nogen forbedrende vej.
+
+- title: flaskehals
+  grammar:
+    class: substantiv
+    gender: fælleskøn
+  declinations: "-en, -e, -ene"
+  english: <i>bottleneck</i>
+  definition: >
+    for en forbedrende vej; den mindste restkapacitet blandt vejens kanter.
+  near:
+    - forbedrende vej
+  usage: >
+    Langs en forbedrende vej kan strømningen forbedres med netop vejens flaskehals.

@@ -2,7 +2,7 @@
 constructions:
 - definition: mængden af knuder i en graf
   title: knudemængde
-- definition: 'en delgraf \(H\) af grafen \(H\) er knudeinduceret af knudedelmængden
+- definition: 'en delgraf \(H\) af grafen \(G\) er knudeinduceret af knudedelmængden
     \(U\subseteq V(G)\), hvis \(V(H)= U\) og \(uv\in E(H)\) hvis og kun hvis \(u,v\in
     V(H)\) og \(uv\in E(G)\).
 

@@ -1,4 +1,4 @@
 ---
-definition: en binær relation, som der symmetrisk, transitiv og refleksiv.
+definition: en binær relation, som er symmetrisk, transitiv og refleksiv.
 title: ækvivalensrelation
 ---
