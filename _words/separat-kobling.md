@@ -1,7 +1,7 @@
 ---
 declinations: -n, -r
 definition: 'en datastruktur, der består af en hakketabel, hvis indgange indeholder
-  sammekoblede værdier, fx i en usorteret følge fremstillet som hægtet liste eller
+  sammenkoblede værdier, fx i en usorteret følge fremstillet som hægtet liste eller
   dynamisk række
 
   '

@@ -5,7 +5,7 @@ constructions:
 
     '
   title: breddenummerering
-declinations: -en, -er, erne
+declinations: -en, -er, -erne
 definition: 'algoritme for gennemsøgning af en graf, hvor knuderne besøges lagvist
 
   '
